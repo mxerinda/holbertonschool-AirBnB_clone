@@ -1,5 +1,5 @@
 *~
-*.ipynb
+*main*
+*__pycache__*
+*.o
 *.pyc
-*.swp
-*.swo
