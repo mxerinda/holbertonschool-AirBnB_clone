@@ -1,118 +1,91 @@
-/*
- * === Filters class style ===
- */
-
-/* Filters style */
 .filters {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid #DDDDDD;
   border-radius: 4px;
-  display: inline-block;
+  display: flex;
   height: 70px;
   width: 100%;
 }
 
-/* Search button style */
 .filters button {
-  background: #ff5a5f;
-  border: none;
+  align-content: center;
+  background-color: #FF5A5F;
+  border: 0;
   border-radius: 4px;
-  color: #fff;
-  float: right;
+  color: #FFFFFF;
   font-size: 18px;
   height: 48px;
-  margin: 12px 30px;
+  margin: auto 30px auto auto;
   width: 20%;
 }
 
-/* Search button hover opacity */
 .filters button:hover {
-  background-color: rgba(255, 90, 95, .9);
+  opacity: 80%;
 }
 
-/* Locations and amenities style */
-.filters .locations,
-.filters .amenities {
-  display: inline-block;
+.filters div {
   height: 100%;
-  position: relative;
   width: 25%;
 }
 
-/* Locations border */
-.filters .locations {
-  border-right: 1px solid #ddd;
-}
-
-/* Locations and amenities hover opacity */
-.filters .locations:hover,
-.filters .amenities:hover {
-  background-color: #fafafa;
-}
-
-/* Locations and amenities popover menu */
-.filters .popover {
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+.filters div .popover {
   display: none;
-  position: absolute;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  list-style: none;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 
-/* Locations and amenities popover hover */
-.filters .locations:hover .popover,
-.filters .amenities:hover .popover {
+.filters div:hover .popover {
   display: block;
 }
 
-/* Locations list style */
-.filters .locations ul {
-  padding: 6px 0 6px 0;
+.filters div.amenities .popover {
+  padding: 25px 0 25px 0;
 }
 
-/* Locations list element margin */
-.filters .locations li {
-  margin: 0 auto 6px 3em;
+.filters div.amenities .popover li {
+  padding: 0 0 0 25px;
 }
 
-/* Amenities list element margin */
-.filters .amenities li {
-  margin: 12px auto 12px 30px;
+.filters div.locations {
+  border-right: 1px solid #DDDDDD;
 }
 
-/*
- * --- Filters header style ---
- */
-
-/* Header box sizing */
-.filters h2,
-.filters h3,
-.filters h4 {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+.filters div.locations .popover {
+  padding: 25px 0 0 0;
 }
 
-/* Header 2 style */
-.filters h2 {
+.filters div.locations .popover h2 {
   font-size: 16px;
-  font-weight: bold;
-  margin: 12px auto 0 30px;
+  margin: 0;
 }
 
-/* Header 3 style */
+.filters div.locations .popover li {
+  padding: 0 0 25px 25px;
+}
+
+.filters div.locations .popover li ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filters div.locations .popover li ul li{
+  padding: 0 0 0 25px;
+}
+
 .filters h3 {
-  font-size: 1.17em;
   font-weight: 600;
-  height: 50%;
-  padding: 15.5px 0 0 30px;
+  margin-bottom: 0;
+  margin-left: 50px;
 }
 
-/* Header 4 style */
 .filters h4 {
-  font-size: 14px;
   font-weight: 400;
-  height: 50%;
-  padding: 4.5px 0 12px 30px;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-top: 0;
 }

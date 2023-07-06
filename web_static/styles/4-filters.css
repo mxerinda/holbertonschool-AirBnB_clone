@@ -1,30 +1,20 @@
-/*
- * === Filters class style ===
- */
-
-/* Filters style */
 .filters {
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: white;
+  border: 1px solid #DDDDDD;
   border-radius: 4px;
+  display: flex;
   height: 70px;
   width: 100%;
 }
 
-/* Search button style */
 .filters button {
-  background: #ff5a5f;
-  border: none;
+  align-content: center;
+  background-color: #FF5A5F;
+  border: 0;
   border-radius: 4px;
-  color: #fff;
-  float: right;
+  color: #FFFFFF;
   font-size: 18px;
   height: 48px;
-  margin: 12px 30px;
+  margin: auto 30px auto auto;
   width: 20%;
-}
-
-/* Search button hover opacity */
-.filters button:hover {
-  background-color: rgba(255, 90, 95, .9);
 }
